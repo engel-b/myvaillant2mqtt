@@ -1,0 +1,4 @@
+asyncio
+paho-mqtt
+requests
+jsonpickle
