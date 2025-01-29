@@ -17,7 +17,7 @@ mqtt_topic = os.getenv('MQTT_TOPIC', 'test/vaillant')
 mqtt_topic_lwt = mqtt_topic + '/LWT'
 mqtt_topic_state = mqtt_topic + '/state'
 mqtt_use_ssl = os.getenv('MQTT_USE_SSL', '').lower() in ['true', '1', 'yes']
-mqtt_trusted_fingerprint = os.getenv('MQTT_TRUSTED_FINGERPRINT')
+mqtt_trusted_fingerprint = os.getenv('MQTT_TRUSTED_FINGERPRINT') or None
 
 # Vaillant API-Konfiguration
 vaillant_user = os.getenv('MYVAILLANT_USER')
