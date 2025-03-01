@@ -4,15 +4,13 @@ This is an addon to the [myPyllant-docker image|https://github.com/signalkraft/m
 
 I tried to make this reusable. If something is missing to get it running on your machine, let me know.
 
-## Build
+## Build & push
 ```bash
 docker build -t engelb/myvaillant2mqtt:<version> .
-```
-
-## Push
-```bash
 docker push engelb/myvaillant2mqtt:<version>
 ```
+
+Now the build and is done by Github Actions automatically when something is pushed to main.
 
 ## Run
 ```bash
