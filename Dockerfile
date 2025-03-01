@@ -22,5 +22,4 @@ RUN chmod 0644 /etc/cron.d/crontab
 RUN /usr/bin/crontab /etc/cron.d/crontab
 
 # running cron in the foreground
-#CMD ["cron","-f"]
-CMD printenv >> /etc/environment && cron -f
+CMD ["/bin/sh", "-c", "printenv >> /etc/environment && cron -f"]
