@@ -21,5 +21,5 @@ jobs:
 
     - name: Push docker image
       run: |
-        docker login -u engelb -p ${{ secrets.DOCKER_HUB_TOKEN }}
+        docker login -u engelb -p ${{ secrets.DOCKER_HUB_SECRET }}
         docker push engelb/myvaillant2mqtt:$(date +%s)
